@@ -1,0 +1,35 @@
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="nitinkaveriappa"><a class="LI-simple-link" href='https://www.linkedin.com/in/nitinkaveriappa?trk=profile-badge'>Nitin Kaveriappa Udiyanda Muthanna</a></div>
+
+
+
+<script type="text/javascript">
+
+/***********************************************
+* Disable Text Selection script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+function disableSelection(target){
+if (typeof target.onselectstart!="undefined") //IE route
+	target.onselectstart=function(){return false}
+else if (typeof target.style.MozUserSelect!="undefined") //Firefox route
+	target.style.MozUserSelect="none"
+else //All other route (ie: Opera)
+	target.onmousedown=function(){return false}
+target.style.cursor = "default"
+}
+
+//Sample usages
+//disableSelection(document.body) //Disable text selection on entire body
+//disableSelection(document.getElementById("mydiv")) //Disable text selection on element with id="mydiv"
+
+</script>
+<script type="text/javascript">
+disableSelection(document.body) //disable text selection on entire body of page
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

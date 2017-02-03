@@ -1,0 +1,15 @@
+{
+  "name": "Nitin Kaveriappa Udiyanda Muthanna's Personal Website",
+  "short_name": "NK's Website",
+  "icons": [{
+        "src": "images/terminal-152-195654.png",
+        "type": "image/png",
+        "sizes": "152x152"
+      }],
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#FFFFFF"
+}
