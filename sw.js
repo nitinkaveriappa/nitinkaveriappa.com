@@ -3,14 +3,15 @@ e.waitUntil(
 caches.open('airhorner').then(function(cache) {
 return cache.addAll([
 '/',
+'/favicon.ico',
 '/index.html',
 '/css/style.css',
-'https://drive.google.com/file/d/0B-OAzS6pCLATWExxT3RBaUFRT1k/view?usp=sharing',
-'https://drive.google.com/file/d/0B-OAzS6pCLATanlpLVd0ZFBSNkk/view?usp=sharing',
+'/docs/resume.pdf',
+'/docs/coverletter.pdf',
 '/images/me.jpg',
-'/images/githubdark.png',
-'/images/linkedinblack.png',
-'/images/terminal-152-195654.png',
+'/images/iconmonstr-github-1.svg',
+'/images/iconmonstr-linkedin-3.svg',
+'/images/android-icon-192x192.png',
 '/audio/audio.mp3'
 ]);
 })

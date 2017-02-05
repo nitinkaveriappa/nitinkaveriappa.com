@@ -2,9 +2,9 @@
   "name": "Nitin Kaveriappa Udiyanda Muthanna's Personal Website",
   "short_name": "NK's Website",
   "icons": [{
-        "src": "images/terminal-152-195654.png",
+        "src": "images/android-icon-192x192",
         "type": "image/png",
-        "sizes": "152x152"
+        "sizes": "192x192"
       }],
   "start_url": "/index.html",
   "scope": "/",
