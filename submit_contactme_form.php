@@ -9,9 +9,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	}
 	else
 	{
-		header("Location:index.html?type=err");
+		header("Location:contactme.html?type=err");
 	}
-//get captcha secret
+	
+	//get captcha secret
 	$config = parse_ini_file('config.php');
 	$secret = $config['secret'];
 	//Validates the captcha value from google server
