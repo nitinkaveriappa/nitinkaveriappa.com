@@ -27,15 +27,23 @@
 	padding-left: 5px;
 }
 
+span.right {
+	text-align: right;
+}
+
+span.it {
+	font-style: italic;
+}
+
+span.bo {
+	font-weight: bold;
+}
+
 #me {
 	width:	280px;
 	height: 280px;
 	border-radius: 50%;
 	vertical-align: middle;
-}
-
-#no {
-	display: none;
 }
 
 header, footer{
