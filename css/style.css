@@ -41,7 +41,7 @@ span.bo {
 .navbar-nav  li a:hover {
     color: #ffffff !important;
 }
-.btn {
+.btn-link {
   padding: 0px 0px;
 }
 .centered {
@@ -62,4 +62,19 @@ span.bo {
     width: 100%;
     height: 100%;
   }
+}
+
+/* Contact Form style */
+.form-signin {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
 }
