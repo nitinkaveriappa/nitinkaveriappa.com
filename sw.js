@@ -6,8 +6,6 @@ return cache.addAll([
 '/favicon.ico',
 '/index.html',
 '/css/style.css',
-'/docs/resume.pdf',
-'/docs/coverletter.pdf',
 '/images/me.jpg',
 '/images/iconmonstr-github-1.svg',
 '/images/iconmonstr-linkedin-3.svg',

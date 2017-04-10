@@ -16,6 +16,20 @@
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/script.js"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function onSubmit(token) {
+      var form = document.getElementById("contactForm");
+      if(validate_form()) {
+        form.submit();
+      }
+      else {
+        grecaptcha.reset();
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -33,6 +47,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#abtme">About Me</a></li>
+          <li><a href="#cntme">Contact Me</a></li>
         </ul>
       </div>
     </div>
@@ -47,10 +62,10 @@
 		<audio controls><source src="audio/audio.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
   </div>
 
-  <hr/>
+  <hr id="abtme"/>
 
   <!-- Second Container -->
-  <div class="container-fluid text-center bg-1" id="abtme">
+  <div class="container-fluid text-center bg-1">
     <h3 class="margin">About Me</h3>
     Full Name: <span class="it bo">Udiyanda Muthanna, Nitin Kaveriappa</span></br>
 		DOB: <span class="bo">21<sup>st</sup> December 1991</span></br>
@@ -66,13 +81,13 @@
 		</a>
   </div>
 
-  <hr/>
+  <hr id="cntme"/>
 
   <!-- Third Container (Grid) -->
   <div class="container-fluid text-center bg-1">
     <h3 class="margin">Contact Me</h3>
     Email Id: <a href="mailto:nitinkaveriappa@gmail.com">nitinkaveriappa@gmail.com</a></br></br>
-        <form class="form-signin" action="#" method="POST">
+        <form class="form-signin" id="contactForm" action="contactSubmit.php" method="POST">
           <p>Leave a Message</p>
   		    <label for="inputName" class="sr-only">Name</label>
   		    <input type="text" name="Name" id="inputName" class="form-control" placeholder="Name" required>
@@ -80,7 +95,7 @@
           <input type="email" name="Email" id="inputEmail" class="form-control" placeholder="Email Id" required>
           <label for="inputMessage" class="sr-only">Message</label>
           <input type="text" name="Message" id="inputMessage" class="form-control" placeholder="Message" required><br/>
-          <button class="btn btn-default" disabled="disabled" type="submit" id="submit">Submit</button>
+          <button class="btn btn-default g-recaptcha" type="submit" data-sitekey="6Lf3lxgUAAAAAIUINSeTRMCA7D68RPlrN1PmQLAk" data-badge="bottomleft" data-callback='onSubmit'>Submit</button>
           <button class="btn btn-default" type="reset">Reset</button>
         </form>
   </div>
