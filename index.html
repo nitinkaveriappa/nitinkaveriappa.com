@@ -14,9 +14,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script src="js/script.js"></script>
@@ -37,7 +34,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top animated fadeInDown">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -59,10 +56,10 @@
   <!-- First Container -->
   <div class="container-fluid text-center bg-1" id="special-size">
     </br></br></br> </br></br></br>
-    <img src="images/me.jpg" class="img-responsive img-circle margin animated zoomIn" style="display:inline" alt="1 person, standing, ocean, sky, outdoor and water" width="300" height="300"/>
-    <h3 class="animated fadeInUp">Hi, My name is Nitin Kaveriappa</h3>
-    <h4 class="animated fadeInUp">(Pronounced as <span class="it">NI-thin kuh-VE-ree-uh-puh</span>)</h4>
-		<audio class="animated fadeInUp" controls><source src="audio/audio.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <img src="images/me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="1 person, standing, ocean, sky, outdoor and water" width="300" height="300"/>
+    <h3>Hi, My name is Nitin Kaveriappa</h3>
+    <h4>(Pronounced as <span class="it">NI-thin kuh-VE-ree-uh-puh</span>)</h4>
+		<audio controls><source src="audio/audio.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
   </div>
 
   <hr id="abtme"/>
@@ -89,7 +86,7 @@
   <div class="container-fluid text-center bg-1">
     <h3 class="margin">Currently At</h3>
     <div class="row">
-      <div class="col-sm-12" data-aos="zoom-in">
+      <div class="col-sm-12">
         <a class="btn btn-link" href="https://www2.gmu.edu/" style="text-decoration:none">
         <img src="images/mason-logo.png" width="219" height="142" border="0" alt="George Mason University Logo">
       </a>
@@ -110,13 +107,13 @@
   <div class="container-fluid text-center bg-1">
     <h3 class="margin">Previously Worked At</h3>
     <div class="row">
-      <div class="col-sm-6" data-aos="fade-right">
+      <div class="col-sm-6">
         <a class="btn btn-link" href="https://www.valtech.com/" style="text-decoration:none">
     		<img src="images/valtech-logo.png" width="200" height="65" border="0" alt="View Nitin Kaveriappa Udiyanda Muthanna's profile on LinkedIn">
         </a>
         <p>Intern</p>
       </div>
-      <div class="col-sm-6" data-aos="fade-left">
+      <div class="col-sm-6">
         <a class="btn btn-link" href="https://www.csc.com/" style="text-decoration:none">
     		<img src="images/csc-logo.png" width="125" height="75" border="0" alt="View Nitin Kaveriappa Udiyanda Muthanna's profile on LinkedIn">
     		</a>
@@ -157,13 +154,6 @@
   <footer class="container-fluid text-center bg-2">
     <p>&copy; 2017 Nitin Kaveriappa</p>
   </footer>
-
-  <script>
-  			AOS.init({
-  				easing: 'ease-out-back',
-  				duration: 1000
-  			});
-  </script>
 
   <script>
 	if('serviceWorker' in navigator) {
