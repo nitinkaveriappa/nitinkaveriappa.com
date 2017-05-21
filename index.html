@@ -14,6 +14,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script src="js/script.js"></script>
@@ -34,7 +37,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top animated fadeInDown">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -56,16 +59,16 @@
   <!-- First Container -->
   <div class="container-fluid text-center bg-1" id="special-size">
     </br></br></br> </br></br></br>
-    <img src="images/me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="1 person, standing, ocean, sky, outdoor and water" width="300" height="300"/>
-    <h3>Hi, My name is Nitin Kaveriappa</h3>
-    <h4>(Pronounced as <span class="it">NI-thin kuh-VE-ree-uh-puh</span>)</h4>
-		<audio controls><source src="audio/audio.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <img src="images/me.jpg" class="img-responsive img-circle margin animated zoomIn" style="display:inline" alt="1 person, standing, ocean, sky, outdoor and water" width="300" height="300"/>
+    <h3 class="animated fadeInUp">Hi, My name is Nitin Kaveriappa</h3>
+    <h4 class="animated fadeInUp">(Pronounced as <span class="it">NI-thin kuh-VE-ree-uh-puh</span>)</h4>
+		<audio class="animated fadeInUp" controls><source src="audio/audio.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
   </div>
 
   <hr id="abtme"/>
 
   <!-- Second Container -->
-  <div class="container-fluid text-center bg-1">
+  <div class="container-fluid text-center bg-1" data-aos="fade-up">
     <h3 class="margin">About Me</h3>
     Full Name: <span class="it bo">Udiyanda Muthanna, Nitin Kaveriappa</span></br>
 		DOB: <span class="bo">21<sup>st</sup> December 1991</span></br>
@@ -83,10 +86,10 @@
   <hr id="currexp"/>
 
   <!-- Third Container -->
-  <div class="container-fluid text-center bg-1">
+  <div class="container-fluid text-center bg-1" data-aos="fade-up">
     <h3 class="margin">Currently At</h3>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12" data-aos="zoom-in">
         <a class="btn btn-link" href="https://www2.gmu.edu/" style="text-decoration:none">
         <img src="images/mason-logo.png" width="219" height="142" border="0" alt="George Mason University Logo">
       </a>
@@ -104,16 +107,16 @@
   <hr id="prevexp"/>
 
   <!-- Fourth Container -->
-  <div class="container-fluid text-center bg-1">
+  <div class="container-fluid text-center bg-1" data-aos="fade-up">
     <h3 class="margin">Previously Worked At</h3>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-6" data-aos="zoom-in-right">
         <a class="btn btn-link" href="https://www.valtech.com/" style="text-decoration:none">
     		<img src="images/valtech-logo.png" width="200" height="65" border="0" alt="View Nitin Kaveriappa Udiyanda Muthanna's profile on LinkedIn">
         </a>
         <p>Intern</p>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6" data-aos="zoom-in-left">
         <a class="btn btn-link" href="https://www.csc.com/" style="text-decoration:none">
     		<img src="images/csc-logo.png" width="125" height="75" border="0" alt="View Nitin Kaveriappa Udiyanda Muthanna's profile on LinkedIn">
     		</a>
@@ -125,7 +128,7 @@
   <hr id="cntme"/>
 
   <!-- Fifth Container (Grid) -->
-  <div class="container-fluid text-center bg-1">
+  <div class="container-fluid text-center bg-1" data-aos="fade-up">
     <h3 class="margin">Contact Me</h3>
     Email Id: <a href="mailto:nitinkaveriappa@gmail.com">nitinkaveriappa@gmail.com</a></br></br>
         <form class="form-signin" id="contactForm" action="contactSubmit.php" method="POST">
@@ -151,10 +154,16 @@
   <hr/>
 
   <!-- Footer -->
-  <footer class="container-fluid text-center bg-2">
+  <footer class="container-fluid text-center bg-2 animated fadeInUp">
     <p>&copy; 2017 Nitin Kaveriappa</p>
   </footer>
 
+  <script>
+		AOS.init({
+			easing: 'ease-out-back',
+			duration: 1000
+		});
+  </script>
   <script>
 	if('serviceWorker' in navigator) {
 	navigator.serviceWorker
