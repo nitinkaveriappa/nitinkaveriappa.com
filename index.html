@@ -19,20 +19,7 @@
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <script src="js/script.js"></script>
 
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script>
-    function onSubmit(token) {
-      var form = document.getElementById("contactForm");
-      if(validate_form()) {
-        form.submit();
-      }
-      else {
-        grecaptcha.reset();
-      }
-    }
-  </script>
 </head>
 <body>
 
@@ -57,12 +44,13 @@
   </nav>
 
   <!-- First Container -->
-  <div class="container-fluid text-center bg-1" id="special-size">
+  <div class="container-fluid text-center bgimg-1" id="special-size">
     </br></br></br> </br></br></br>
-    <img src="images/me.jpg" class="img-responsive img-circle margin animated zoomIn" style="display:inline" alt="1 person, standing, ocean, sky, outdoor and water" width="300" height="300"/>
+    <div class="pos-1">
     <h3 class="animated fadeInUp">Hi, My name is Nitin Kaveriappa</h3>
     <h4 class="animated fadeInUp">(Pronounced as <span class="it">NI-thin kuh-VE-ree-uh-puh</span>)</h4>
 		<audio class="animated fadeInUp" controls><source src="audio/audio.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    </div>
   </div>
 
   <hr id="abtme"/>
@@ -131,17 +119,6 @@
   <div class="container-fluid text-center bg-1" data-aos="fade-up">
     <h3 class="margin">Contact Me</h3>
     Email Id: <a href="mailto:nitinkaveriappa@gmail.com">nitinkaveriappa@gmail.com</a></br></br>
-        <form class="form-signin" id="contactForm" action="contactSubmit.php" method="POST">
-          <p>Leave a Message</p>
-  		    <label for="inputName" class="sr-only">Name</label>
-  		    <input type="text" name="Name" id="inputName" class="form-control" placeholder="Name" required>
-          <label for="inputEmail" class="sr-only">Email</label>
-          <input type="email" name="Email" id="inputEmail" class="form-control" placeholder="Email Id" required>
-          <label for="inputMessage" class="sr-only">Message</label>
-          <input type="text" name="Message" id="inputMessage" class="form-control" placeholder="Message" required><br/>
-          <button class="btn btn-default g-recaptcha" type="submit" data-sitekey="6Lf3lxgUAAAAAIUINSeTRMCA7D68RPlrN1PmQLAk" data-badge="bottomleft" data-callback='onSubmit'>Submit</button>
-          <button class="btn btn-default" type="reset">Reset</button>
-        </form>
   </div>
 
   <hr/>
