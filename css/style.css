@@ -72,7 +72,7 @@ span.bo {
     position: relative;
 }
 .bgimg-1 {
-  background-image: url("../images/img_parallax1.jpg");
+  background-image: url("../images/img_parallax1.JPG");
   min-height: 100%;
 }
 
@@ -89,6 +89,7 @@ span.bo {
   top: 50%;
   width: 70%;
   text-align: center;
+  text-shadow: 2px 2px #000000;
 }
 
 
