@@ -1,2 +1,2 @@
-# nitinkaveriappa.pro
+# nitinkaveriappa.com
 Personal Website
